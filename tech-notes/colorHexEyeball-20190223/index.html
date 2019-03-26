@@ -146,7 +146,7 @@
             </div>
             <h2 class="post-title">色彩的奥秘-从16进制到眼球</h2>
             <div class="post-meta">
-                emm... 4732 words in the article |
+                emm... 4960 words in the article |
                 you are the&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>th friend who reading now
             </div>
         </div>
@@ -237,10 +237,12 @@
 <p>即使他们可能不知道眼睛中的三类视锥细胞，但至少在一百年前就提出了一个超前的想法，即所有可见颜色都可以作为三种颜色的组合而产生。</p>
 <p>Wright＆Guild的想法是构建一种装置，通过三个固定波长光源的组合来重建颜色， 该装置看起来像这样：</p>
 <p><img src="/images/ColorMatching1.png" alt=""></p>
-<p>实验者将底部的灯设置为目标波长（例如，600nm），然后要求测试对象调整三盏固定波长的灯的功率，直到上下的颜色看起来完全一样为止。</p>
-<p>三盏灯功率的调节让我们能用三原色（红绿蓝）来定义600nm的波长。接下来目标波长每5nm就重复以上过程，我们就能得到一个为重建特定波长所需红(700nm),绿(546nm),蓝(435nm)光的强度的曲线。 这些曲线所对应的函数就称为<strong>color matching function（CMF）</strong>。 </p>
-<p>test 我我龙潜智</p>
-<p>（�</p>
+<p>如上图，实验者将底部的灯设置为目标波长（例如，600nm），然后一边观察测试对象，一边小心地调整三盏固定波长的灯的功率，直到上下的颜色看起来完全一样为止。这样我们就能用三原色（红绿蓝）来定义600nm的波长。接下来目标波长每5nm就重复以上过程，我们就能得到一个为重建特定波长所需红(700nm),绿(546nm),蓝(435nm)光的强度的曲线。 这些曲线所对应的函数就称为<strong>color matching function（CMF）</strong>。 这些函数用$\bar{r}(\lambda)$, $\bar{g}(\lambda)$, $\bar{b}(\lambda)$来表示。</p>
+<p><img src="/images/cmfs1.png" alt="CIE 1931 RGB color matching functions"></p>
+<p>这样我们就能用一个简单的三元组（R，G，B）来表示一个特定的纯光谱的颜色，比如光谱600nm就可用（0.34, 0.062, 0.00）来表示。这个值就来自<a href="https://en.wikipedia.org/wiki/CIE_1931_color_space#CIE_RGB_color_space" target="_blank" rel="noopener">CIE 1931 RGB 色彩空间（CIE 1931 RGB color space）</a></p>
+<p>等等，大家看看下图里虚线标出的位置，红色的数值怎么成了负数？这意味着什么呢？</p>
+<p><img src="/images/cmfs2.png" alt="CIE 1931 RGB color matching functions"></p>
+<p>（未完待续）</p>
 
         </div>
         <div class="post-tool">
