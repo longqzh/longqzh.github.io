@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=https://longqzh.github.io/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<link rel="dns-prefetch" href="https://longqzh.github.io">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="prefetch" href="https://longqzh.github.io">
+<link rel="prefetch" href="//www.google-analytics.com">
+
+
+<link rel="prerender" href="https://longqzh.github.io">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://longqzh.github.io">
+<meta name="author" content="John Doe">
+<link rel="stylesheet" href="/css/JSimple.css">
+
+<link rel="shortcut icon" href="/images/favicon.png">
+
+
+<title>色彩的奥秘-从16进制到眼球 - Hexo</title>
+
+<meta name="keywords" content="">
+
+<meta name="description " content="">
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
+
+    
+
+</head>
+<body>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="品阅">品阅</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="/archives" title="Archives"><i class="fa fa-archives"></i><span>Archives</span></a>
+        <a href="/tags" title="Tags"><i class="fa fa-tags"></i><span>Tags</span></a>
+        <!-- custom single page of menus -->
+        
+        
+        <a href="/help" title="帮助">
+            <i class="fa fa-question-circle"></i>
+            <span>帮助</span>
+        </a>
+        
+    </nav>
+</div>
+
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-sns-qr" href="javascript:"><i class="fa fa-telegram"></i></a>
+</div>
+
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        
+        <h1 class="cover-siteName">品读Python源代码</h1>
+        <h3 class="cover-siteTitle">用代码摇滚这个世界</h3>
+        <p class="cover-siteDesc">一个关注技术的IT博客</p>
+        <div class="cover-sns">
+            
+    &nbsp;&nbsp;<div class="btn btn-telegram">
+        <a href="" target="_blank" title="telegram" ref="friend">
+            <i class="fa fa-telegram"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-instagram">
+        <a href="" target="_blank" title="instagram" ref="friend">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+
+    &nbsp;&nbsp;<div class="btn btn-github">
+        <a href="https://github.com/longqzh" target="_blank" title="github" ref="friend">
+            <i class="fa fa-github"></i>
+        </a>
+    </div>
+
+
+        </div>
+    </div>
+</div>
+
+            <div class="page-title">
+    <ul>
+        <li><a href="/">Recent Posts</a></li>
+        
+            
+                <li class="active">
+                    <a href="/categories/tech-notes" data-name="技术">技术</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/humanities" data-name="人文">人文</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/others" data-name="其他">其他</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <input type="text" readonly="readonly" id="local-search-input-tip" placeholder="click to search...">
+        <button type="button" disabled="disabled" class="search-form-submit"><i class="fa fa-search"></i></button>
+    </form>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="https://longqzh.github.io/ReadingPythonSrc_ZH" target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar">
+                </a>
+                <p><span class="label">Author</span>
+                    <a href="https://longqzh.github.io/ReadingPythonSrc_ZH" target="_blank">Peter Long</a>
+                    <span title="Last edited at&nbsp;2019-02-23">2019-02-23</span>
+                </p>
+                <p>一个喜欢品代码胜过敲代码的伪码农</p>
+            </div>
+            <h2 class="post-title">色彩的奥秘-从16进制到眼球</h2>
+            <div class="post-meta">
+                emm... 4732 words in the article |
+                you are the&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>th friend who reading now
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <p>  本文翻译自 <a href="http://jamie-wong.com/post/color/" title="Color: From Hexcodes to Eyeballs" target="_blank" rel="noopener">Color: From Hexcodes to Eyeballs</a>，感谢<a href="http://jamie-wong.com/" target="_blank" rel="noopener">Jamie Wong</a>的分享。<br>  本站适用<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC 4.0国际许可协议</a></p>
+<p>下图是对整篇文章的概况，我们接下来会一点点的解释图中每一个部分的意义。  </p>
+<p><img src="/images/summary_color.png" alt="Color: From Hexcodes to Eyeballs">  </p>
+<p>一个简单的问题： 为什么我们看到<code>background-color: #9B51E0</code>会是这种特别的紫色呢？</p>
+<p><img src="/images/Purple.png" alt="Purple"></p>
+<p>我原以为我早已知道答案，可是当我检查自己的理解时，发现事实远非想象的那么简单。 通过对电磁辐射，光学生物学，色度学和显示硬件的探索，我希望开始填补其中的一些空白。 如果你想跳过， 请参照下面的目录，这是我们将要覆盖的知识点：  </p>
+<ul>
+<li><a href="#电磁辐射">电磁辐射</a>;</li>
+<li><a href="#可见光">可见光</a>;</li>
+<li><a href="#人体感知亮度">人体感知亮度</a>;</li>
+<li><a href="#量化颜色">量化颜色</a>;</li>
+<li><a href="#光学生物学">光学生物学</a>;</li>
+<li><a href="#色彩空间">色彩空间</a>;</li>
+<li><a href="#Wright和Guild的配色实验">Wright和Guild的配色实验</a>;</li>
+<li>色彩空间和色度的可视化</li>
+<li>色域和光谱轨迹</li>
+<li>CIE XYZ色彩空间</li>
+<li>屏幕的子像素</li>
+<li>sRGB</li>
+<li>sRGB十六进制码</li>
+<li>伽玛校正</li>
+<li>从十六进制码到眼球</li>
+<li>关于亮度设置的简要说明</li>
+<li>拾遗</li>
+<li>参考文献</li>
+</ul>
+<p>首先，让我们从物理学开始吧。</p>
+<h1 id="电磁辐射"><a href="#电磁辐射" class="headerlink" title="电磁辐射"></a>电磁辐射</h1><p>无论是无线电波，微波，红外线，可见光，紫外线，X射线，还是伽马射线，它们都是电磁辐射的形式。 虽然这些东西都有不同的名称，但其实这些名称只标记了电磁波谱内的不同波长范围而已。 </p>
+<p><img src="/images/electromagneticSpectrum.png" alt="The electromagnetic spectrum"><br>电磁辐射的波长</p>
+<p>最小的电磁辐射单位是光子。一个光子中所包含的能量与其相应波的频率成比例，频波越高，能量越大。 要真正理解颜色，我们需要先了解辐射。 让我们先来仔细看看白炽灯泡的辐射。</p>
+<p><img src="/images/incandescent.png" alt=""><br>Photo by <a href="https://unsplash.com/photos/HfR0W6HW_Cw" target="_blank" rel="noopener">Alex Iby</a></p>
+<p>你可能想知道灯泡散发出多少能量。 物体的<strong>辐射通量(radiant flux</strong>)$ \Phi_e $ 是每秒发射的总能量，以瓦特(Watts)为单位测量。 100W白炽灯泡的辐射通量约为80W，其余20W直接转换为非辐射热量。 </p>
+<p>如果我们想知道每个波长有多少能量，我们可以看一下<strong>光谱通量</strong>(<strong>spectral flux</strong>)。 物体的光谱通量（ $ \Phi_{e,\lambda} $ ）是每单位波长的辐射通量，并且通常以瓦特/纳米测量。如果我们将白炽灯泡的光谱通量绘制为波长的函数，它可能看起来像这样：</p>
+<p><img src="/images/SpectralFlux1.png" alt=""></p>
+<p>该曲线下的面积表示<strong>辐射通量</strong>。 作为等式，$\Phi_e=\int_0^{\infty} \Phi_{e,\lambda}^{bulb}(\lambda)d{\lambda} $。 在这种情况下，曲线下面积约为80W。</p>
+<p><img src="/images/SpectralFlux2.png" alt=""></p>
+<p>你很可能已经从环保运动中听说白炽灯泡效率相当的低下，不过看了这组数据之后，你也许会觉得：“还好吧，80％看起来也不那么糟糕”。 没错！白炽灯泡确实非常有效地将电能转换为了辐射。 但不幸的是，这是将电能转换为<strong>人类可见辐射（即可见光）</strong>的效率则低得可怕。</p>
+<h1 id="可见光"><a href="#可见光" class="headerlink" title="可见光"></a>可见光</h1><p>可见光是波长范围从380nm到750nm的电磁辐射。 在我们的白炽灯泡的光谱通量图上，可见光是下面的阴影区域。</p>
+<p><img src="/images/SpectralFlux3.png" alt=""></p>
+<p>OK，可见光谱内的辐射能量为8.7W，对于一个100W的灯泡来说效率仅为8.7％， 这看起来太糟糕了。 不过坏消息还在后头呢！ 为了理解原因，让我们考虑一下为什么可见光是<em>可见的</em>。</p>
+<h1 id="人体感知亮度"><a href="#人体感知亮度" class="headerlink" title="人体感知亮度"></a>人体感知亮度</h1><p>就如同白炽灯泡并不是在所有波长下都会有同等的辐射量一样，我们的眼睛也并不是对所有波长的辐射都具有同样的敏感度。 如果我们测量人眼对每个波长的敏感度，我们就会得到<strong>光度函数(luminosity function)</strong>。 标准光度函数$\bar{y}(\lambda)$如下所示：</p>
+<p><img src="/images/SpectralFlux4.png" alt=""></p>
+<p>该发光度函数的界限定义了可见光的范围。 超出此范围的任何东西都是不可见的，因为我们的眼睛对它根本不敏感！ 曲线还表明，我们的眼睛对550nm处的辐射比对650nm或450nm处的辐射更敏感。 其他动物的眼睛对不同波长范围敏感，因此具有不同的光度函数。 鸟类可以看到$\lambda$= 300nm 到$\lambda$=400nm$ 范围内的紫外线辐射，所以如果让鸟类来定义电磁波谱 ，那么紫外线也将成为他们“可见光”范围的一部分！</p>
+<p>通过将光谱通量图与光度函数$\bar{y}(\lambda)$相乘，我们得到一个函数，该函数描述了光源发出的每个波长对人类感知亮度的影响。</p>
+<p><img src="/images/SpectralFlux5.png" alt=""></p>
+<p>上图中通过光谱通量与光度函数相乘得到的结果就叫<strong>光谱光通量（spectal luminous flux）</strong> $\Phi_{v,\lambda}$。 为了强调这是关于人类的主观感知而不是客观能量，我们通常使用<strong>流明（lumens）</strong>而不是瓦特（Watts）来测量光通量。 两者之间的转换比率是683.002lm/W。</p>
+<p>$$\Phi_{v,\lambda}(\lambda) = 683.002\frac{lm}{W}\cdot\bar{y}(\lambda) \cdot\Phi_{v,\lambda}(\lambda)$$</p>
+<p>光源的<strong>光通量(luminous flux, $\Phi_v$)</strong>是人类能感知到的该光源的总功率。 就像我们通过采用光谱通量曲线下的面积来计算辐射通量一样，我们可以通过瓦特到流明的恒定转换，从获取光谱光通量曲线下的面积来计算光通量，：</p>
+<p><img src="/images/SpectralFlux5.5.png" alt=""></p>
+<p>$$\Phi_{v}^{bulb}=\int_0^{\infty}\bar{y}(\lambda) \cdot \Phi_{v,\lambda}^{bulb}(\lambda)d\lambda=683.002\frac{lm}{W} \cdot 2.4W \approx 1600lm$$ </p>
+<p>因此，我们100W白炽灯泡的光通量仅为2.4W或1600lm！ 即灯泡的发光效率为2.4％，这与将电能转换为辐射80％的效率相差甚远！ 如果我们有一个光源能将其发射的能量集中到可见范围内，我们就能够获得更高效的照明。 让我们比较一下白炽灯，荧光灯和LED灯泡的光谱：</p>
+<p><img src="/images/SpectralFlux6.png" alt=""></p>
+<p>事实上，我们可以感知到的荧光灯或led灯泡发射的辐射远远少于人类无法看到的波长。 如果白炽灯泡的效率可能达到1-3％的话，那么荧光灯泡的效率可以达到10％左右，而LED灯泡的效率则可高达20％！</p>
+<p>关于亮度就讲到这里，让我们回到这篇文章的焦点：颜色！</p>
+<h1 id="量化颜色"><a href="#量化颜色" class="headerlink" title="量化颜色"></a>量化颜色</h1><p><img src="/images/lemon.png" alt=""></p>
+<p>人们是如何识别颜色的呢？ 如果我面前有个柠檬，我怎么能通过电话告诉你它是什么颜色？ 我可能会告诉你“柠檬是黄色的”，但是到底是哪种黄色？ 而你如何精确地识别这些黄色呢？</p>
+<p>在已经知道了颜色是人类对电磁辐射的一种翻译后，我们可能会试图通过光谱通量在数学上去定义颜色。 任何人类可见颜色都是单色（单波长）颜色的一些加权组合。 单色也称为光谱色。对于任何给定的物体，我们可以测量其发射（或反射）的光谱，并使用它来精确识别颜色。 如果我们可以重现光谱，我们当然可以重现颜色！</p>
+<p>从柠檬上的点反射的阳光可能具有如下所示的反射光谱：</p>
+<p><img src="/images/ReflectanceSpectrum.png" alt=""></p>
+<p>注意：到达您眼睛的辐射的功率和光谱分布将取决于光源的功率和光谱，光源与被照物体的距离，物体的大小和形状，吸收光谱物体的距离，以及物体的距离。这需要考虑很多，所以让我们只关注当光线进入到你的眼睛时会发生什么。我们现在也忽视单位，仅仅专注于概念。</p>
+<p>当具有这种光谱分布的能量照射到我们的眼睛时，我们将其视为“黄色”。OK，现在让我们说我拍一张柠檬的照片并将其上传到我的电脑。接下来，我仔细调整屏幕上的颜色，直到自己察觉不出屏幕上的柠檬与实际的柠檬在颜色上有何不同为止。</p>
+<p>如果你要测量屏幕上的光谱功率分布，你希望分布看起来像什么？你可能会预测它看起来与实际的柠檬的反射光谱相似。但它实际上看起来像这样：</p>
+<p><img src="/images/EmissionSpectrum.png" alt=""></p>
+<p>对于人类观察者来说，看起来相同的两种不同的光谱功率分布称为<strong>同色异谱（Metamerism）</strong>。这怎么可能？让我们先来看看关于眼睛的生物学。</p>
+<h1 id="光学生物学"><a href="#光学生物学" class="headerlink" title="光学生物学"></a>光学生物学</h1><p>我们眼中称为“棒”和“锥体”的特殊细胞感应光的刺激。 棒细胞在低光照条件下占主导地位，并且在色觉方面不起作用，因此我们将重点放在视锥细胞上。</p>
+<p>人类通常有3种视锥细胞。 这三种不同的视锥细胞使人类成为“三色”。 然而，至少有一个确认的tetrochromat人类病例！ 其他动物的锥形细胞的类别更多。 螳螂虾有十六种不同的锥体。</p>
+<p>我们将每种视锥细胞用它们感知的光波长范围来标记。 如果下图所示，这三种视锥细胞分别被称为“S”，“M”和“L”（短，中，长）。</p>
+<p><img src="/images/Cones.png" alt=""></p>
+<p>上图中的三条曲线分别表示相应锥体对每个波长的敏感程度。 每条曲线上的最高点称为“峰值波长”，表示对于该锥体最敏感的辐射波长。</p>
+<p>让我们来看看我们的视锥细胞是如何处理手中柠檬的光线的。</p>
+<p><img src="/images/ConeExcitation1.png" alt=""></p>
+<p>通过观察曲线之下的区域，我们可以看到每种视锥细胞接收了多少真实柠檬反射的辐射。 在这种情况下，S，M和L锥的标准化后的值分别为0.02,0.12和0.16。 现在让我们重复屏幕上柠檬的过程。</p>
+<p><img src="/images/ConeExcitation2.png" alt=""></p>
+<p>尽管到达眼睛的辐射光谱完全不同，但视锥细胞接收到的刺激是相同的（S = 0.02，M = 0.12，L = 0.16）。 这就是为什么真正的柠檬和屏幕上的柠檬在我们看来是一样的！</p>
+<p>我们的3组视锥细胞将任何<strong>光谱通量</strong>$\Phi_e(\lambda)$曲线简化为包含三个数字（S，M，L）的三元组，而每个不同的（S，M，L）三元组都对应着不同的颜色！ 这非常方便，因为（0.02,0.12,0.16）这样的三元组比复杂的连续函数更容易交流。 利用数字，我们的眼睛正将一个无限维空间的问题简化到三维！</p>
+<p>事实上，这个（S，M，L）三元组是我们色彩空间的第一个例子。</p>
+<h1 id="色彩空间"><a href="#色彩空间" class="headerlink" title="色彩空间"></a>色彩空间</h1><p>颜色空间允许我们用数字精度定义我们正在谈论的颜色。 在上一节中，我们看到特定的黄色可以在SML颜色空间中表示为（0.02,0.12,0.16），这通常被称为<a href="https://en.wikipedia.org/wiki/LMS_color_space" target="_blank" rel="noopener">LMS颜色空间</a>。</p>
+<p>因为这个颜色空间用视锥细胞的刺激来描述色彩，所以根据定义，任何人类可见颜色都可以用正LMS坐标表示（不包括非常罕见的四色人，他们需要四个坐标而不是三个坐标）。</p>
+<p>但是，这个色彩空间有个缺点，即并非所有的三元组在物理上都是可能的。 我们来考虑一下LMS坐标（0,1,0）。 为了物理上真实地实现这个坐标所代表的颜色，我们需要找到一些刺激M锥体而不刺激L或S锥体的方法。 如下图所示，因为M锥的灵敏度曲线在所有波长上与L或S锥都有重叠，所以这个颜色根本不可能存在！</p>
+<p><img src="/images/Cones.png" alt=""></p>
+<p>这个事实的一个副作用就是，仅增加一种视锥细胞的刺激是非常困难的。 而这，将使LMS颜色空间无法成为构建显示硬件的理想选择。</p>
+<p>另一个历史问题是视锥细胞的灵敏度直到20世纪90年代才被准确地测定，并且需要开发出数学上精确的颜色模型。 这方面的第一个重大进展是在1920年代后期才出现的。</p>
+<h1 id="Wright和Guild的配色实验"><a href="#Wright和Guild的配色实验" class="headerlink" title="Wright和Guild的配色实验"></a>Wright和Guild的配色实验</h1><p>在20世纪20年代后期，William David Wright和John Guild进行了实验，根据3种特定波长的光的强度来精确定义颜色。</p>
+<p>即使他们可能不知道眼睛中的三类视锥细胞，但至少在一百年前就提出了一个超前的想法，即所有可见颜色都可以作为三种颜色的组合而产生。</p>
+<p>Wright＆Guild的想法是构建一种装置，通过三个固定波长光源的组合来重建颜色， 该装置看起来像这样：</p>
+<p><img src="/images/ColorMatching1.png" alt=""></p>
+<p>实验者将底部的灯设置为目标波长（例如，600nm），然后要求测试对象调整三盏固定波长的灯的功率，直到上下的颜色看起来完全一样为止。</p>
+<p>三盏灯功率的调节让我们能用三原色（红绿蓝）来定义600nm的波长。接下来目标波长每5nm就重复以上过程，我们就能得到一个为重建特定波长所需红(700nm),绿(546nm),蓝(435nm)光的强度的曲线。 这些曲线所对应的函数就称为<strong>color matching function（CMF）</strong>。 </p>
+<p>test 我我龙潜智</p>
+<p>（�</p>
+
+        </div>
+        <div class="post-tool">
+            <a class="btn-thumbs-up" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> Donate
+            </a>
+        </div>
+        
+        <div class="post-tags">Tags：
+            
+            <a href="/tags/Color/">Color</a>
+            
+        </div>
+        
+    </article>
+    
+    <p style="text-align: center">This article just represents my own viewpoint. If there is something wrong, please correct me.</p>
+    
+    
+
+    
+    
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"> </script>
+
+        <div id="gitalk-container"></div>
+        <script type="text/javascript">
+            var gitalk = new Gitalk({
+                clientID: 'f35b4a857001c1ff2af4',
+                clientSecret: '3217d168765035b47e0ce9b9821f4469fea7a25b',
+                id: window.location.pathname,
+                repo: 'longqzh.github.io',
+                owner: 'longqzh',
+                admin: 'longqzh',
+                distractionFreeMode: 'true'
+            })
+            gitalk.render('gitalk-container')
+        </script>
+    
+
+
+
+
+</div>
+<script src="/js/busuanzi.pure.mini.js"></script>
+
+
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner" style="text-align: center">
+        <p>
+            <a href="/about" title="About">About</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/help" title="Help">Help</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/links" title="Links">Links</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/sitemap.xml" title="SiteMap">SiteMap</a>
+        </p>
+        <p>
+            Has been established&nbsp<a href="/timeline" id="siteBuildingTime"></a>&nbspDays，<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="licence">Based on Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a><br>
+            ©2017-<span id="cpYear"></span> Based on&nbsp<a href="http://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+            ，Theme by&nbsp&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="bookmark">JSimple</a>
+            ，Author&nbsp<a href="https://longqzh.github.io/ReadingPythonSrc_ZH" target="_blank" rel="friend">Peter Long</a>
+            ，Hosted by <a href="https://pages.github.com/" target="_blank" rel="nofollow">GitHub Pages</a>
+        </p>
+    </div>
+</footer>
+<script src="/js/SimpleCore.js"></script>
+
+</div>
+<!-- search pop -->
+<div class="popup search-popup local-search-popup">
+    <div class="local-search-header clearfix">
+        <span class="search-icon">
+            <i class="fa fa-search"></i>
+        </span>
+        <span class="popup-btn-close">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="local-search-input-wrapper">
+            <input id="local-search-input" spellcheck="false" type="text" autocomplete="off" placeholder="Input query keywords here...">
+        </div>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        SimpleCore.init({
+            buildingTime: '01/20/2018',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            snsQRCode: '/images/sns-qrcode.png',
+            donateImg: '/images/donate-qr.png',
+            localSearch: {
+                dbPath: '/search.json',
+                trigger: 'auto',
+                topN: '1',
+                unescape: 'false'
+            }
+        });
+    });
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+</body>
+</html>
